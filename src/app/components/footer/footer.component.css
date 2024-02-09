@@ -1,0 +1,23 @@
+.footer{
+    background-color: #1d293f;
+}
+.footer_copy{
+    --padding-container:15px 0;
+    text-align: center;
+    color: white;
+}
+.footer_copyright{
+    font-weight: 200;
+    font-size: small;
+}
+.footer_img{
+    width: 30px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    color: #fff;
+} 

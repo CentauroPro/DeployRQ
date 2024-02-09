@@ -1,0 +1,73 @@
+{
+  "profesores": [
+    {
+      "id": 1,
+      "nombre": "Manuel Lara",
+      "correo": "lara@example.com",
+      "especialidad": "Desarrollo Frontend con Angular",
+      "cursos": [
+        {
+          "id": 1,
+          "nombre": "Angular",
+          "horario": "Lunes y Miércoles 10:00 - 12:00",
+          "mes_inicio": "2023-10-01",
+          "mes_fin": "2024-03-31",
+          "estudiantes": [
+            {
+              "id": 1,
+              "nombre": "Ana Gómez",
+              "fecha_nacimiento": "2000-03-10",
+              "correo": "ana@example.com",
+              "direccion": "Av. 12 de Octubre, Quito, Ecuador",
+              "cedula": "1234567890",
+              "calificaciones": [
+                {
+                  "promedio": 9.5,
+                  "fecha_ingreso": "2024-02-08",
+                  "actividad1": 8.5,
+                  "actividad2": 7.5,
+                  "actividad3": 9.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Javier Cando",
+      "correo": "cando2@example.com",
+      "especialidad": "Programación en Python",
+      "cursos": [
+        {
+          "id": 2,
+          "nombre": "Programación en Python",
+          "horario": "Lunes y Miércoles 15:00 - 17:00",
+          "mes_inicio": "2023-10-01",
+          "mes_fin": "2024-03-31",
+          "estudiantes": [
+            {
+              "id": 2,
+              "nombre": "Luis García",
+              "fecha_nacimiento": "1999-05-15",
+              "correo": "luis@example.com",
+              "direccion": "Cumbayá, Quito, Ecuador",
+              "cedula": "0987654321",
+              "calificaciones": [
+                {
+                  "promedio": 9.5,
+                  "fecha_ingreso": "2024-02-08",
+                  "actividad1": 8.5,
+                  "actividad2": 7.5,
+                  "actividad3": 9.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
