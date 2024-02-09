@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<main>
+    <h2 class="contact">Cursos</h2>
+    <div class="grid-container">
+      <div *ngFor="let item of dataProfesor">
+        <ng-container *ngFor="let curso of item.cursos">
+          <div class="grid-item">
+            <div class="card">
+              <h3>{{ curso.nombre }}</h3>
+              <!-- Puedes agregar más detalles del curso aquí si es necesario -->
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </main>
+  

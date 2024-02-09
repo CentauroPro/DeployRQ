@@ -1,0 +1,19 @@
+.form-inline {
+    position: relative;
+    object-fit: cover;
+    align-items: center;
+    padding: 30px;
+    margin: 1px auto 1px;
+    color: aliceblue;
+    width: 300px;
+}
+.form-inline1{
+    position: relative;
+    object-fit: cover;
+    align-items: center;
+    padding: 30px;
+    margin: 1px auto 1px;
+    color: aliceblue;
+    width: 300px;
+
+}
