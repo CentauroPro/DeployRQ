@@ -9,11 +9,11 @@ import { CursosService } from 'src/app/services/cursos.service';
 export class CursosComponent {
   constructor(private servicio: CursosService) {}
   
-  dataProfesor: any;
+  dataCursos: any;
 
   ngOnInit() {
     this.servicio.getCurso().subscribe(curso => {
-      this.dataProfesor = curso;
+      this.dataCursos = curso;
     })
   }
 }

@@ -11,7 +11,10 @@ export class CursosService {
 
   constructor(private http:HttpClient) { }
 
-  private API_CURSOS='http://localhost:3000/profesores'
+  //private API_CURSOS='http://localhost:3000/cursos'
+  
+  private API_CURSOS='http://localhost:9090/cursos2';
+
 
   getCurso():Observable <any>  {
     return this.http.get(this.API_CURSOS)

@@ -1,73 +1,55 @@
 {
   "profesores": [
     {
-      "id": 1,
-      "nombre": "Manuel Lara",
-      "correo": "lara@example.com",
-      "especialidad": "Desarrollo Frontend con Angular",
-      "cursos": [
-        {
-          "id": 1,
-          "nombre": "Angular",
-          "horario": "Lunes y Miércoles 10:00 - 12:00",
-          "mes_inicio": "2023-10-01",
-          "mes_fin": "2024-03-31",
-          "estudiantes": [
-            {
-              "id": 1,
-              "nombre": "Ana Gómez",
-              "fecha_nacimiento": "2000-03-10",
-              "correo": "ana@example.com",
-              "direccion": "Av. 12 de Octubre, Quito, Ecuador",
-              "cedula": "1234567890",
-              "calificaciones": [
-                {
-                  "promedio": 9.5,
-                  "fecha_ingreso": "2024-02-08",
-                  "actividad1": 8.5,
-                  "actividad2": 7.5,
-                  "actividad3": 9.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "id": "1",
+      "nombre": "Nombre del Profesor",
+      "especialidad": "Especialidad del Profesor",
+      "correo": "correo@example.com",
+      "telefono": "123-456-7890"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "1",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzAh5SjPKiZIvTtjJHq3Msq5heBoaQenm4Q&usqp=CAU",
+      "nombre": "Angular",
+      "horario": "Lunes y Miércoles 10:00 - 12:00",
+      "mes_inicio": "2023-10-01",
+      "mes_fin": "2024-03-31"
     },
     {
-      "id": 2,
-      "nombre": "Javier Cando",
-      "correo": "cando2@example.com",
-      "especialidad": "Programación en Python",
-      "cursos": [
-        {
-          "id": 2,
-          "nombre": "Programación en Python",
-          "horario": "Lunes y Miércoles 15:00 - 17:00",
-          "mes_inicio": "2023-10-01",
-          "mes_fin": "2024-03-31",
-          "estudiantes": [
-            {
-              "id": 2,
-              "nombre": "Luis García",
-              "fecha_nacimiento": "1999-05-15",
-              "correo": "luis@example.com",
-              "direccion": "Cumbayá, Quito, Ecuador",
-              "cedula": "0987654321",
-              "calificaciones": [
-                {
-                  "promedio": 9.5,
-                  "fecha_ingreso": "2024-02-08",
-                  "actividad1": 8.5,
-                  "actividad2": 7.5,
-                  "actividad3": 9.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
+      "id": "2",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-T_l6e5SyUbXUbBuRtVCQ_2pYltdW2ilj4Q&usqp=CAU",
+      "nombre": "Desarrollo Movil",
+      "horario": "Lunes y Miércoles 18:00 - 21:00",
+      "mes_inicio": "2024-02-01",
+      "mes_fin": "2024-03-31"
+    },
+    {
+      "id": "3",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUXDlKd18ofxqMy-M-hoQ0CZCvcXywNKWHw&usqp=CAU",
+      "nombre": "Base de Datos",
+      "horario": "Lunes y Miércoles 07:00 - 09:00",
+      "mes_inicio": "2024-03-01",
+      "mes_fin": "2024-04-31"
+    }
+  ],
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "johan reyes",
+      "nota_1": 2,
+      "nota_2": 4,
+      "nota_3": 4,
+      "promedio": 3.33
+    },
+    {
+      "id": 3,
+      "nombre": "vale reyes",
+      "nota_1": 6,
+      "nota_2": 7,
+      "nota_3": 8,
+      "promedio": 7
     }
   ]
 }
-

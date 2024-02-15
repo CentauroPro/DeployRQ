@@ -12,10 +12,10 @@ import { ContactosComponent } from './components/contactos/contactos.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { EstudiantesComponent } from './components/estudiantes/estudiantes.component';
-import { ProfesoresComponent } from './components/profesores/profesores.component';
-import { CalificacionesComponent } from './components/calificaciones/calificaciones.component';
-import { FormProfesorComponent } from './components/form-profesor/form-profesor.component';
-import { AdminProfesorComponent } from './components/admin-profesor/admin-profesor.component';
+import { FormEstudiantesComponent } from './components/form-estudiantes/form-estudiantes.component';
+import { FormCursosComponent } from './components/form-cursos/form-cursos.component';
+import { LisestudianteComponent } from './components/lisestudiante/lisestudiante.component';
+import { AsideComponent } from './components/aside/aside.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +27,10 @@ import { AdminProfesorComponent } from './components/admin-profesor/admin-profes
     CarouselComponent,
     CursosComponent,
     EstudiantesComponent,
-    ProfesoresComponent,
-    CalificacionesComponent,
-    FormProfesorComponent,
-    AdminProfesorComponent
+    FormEstudiantesComponent,
+    FormCursosComponent,
+    LisestudianteComponent,
+    AsideComponent
   ],
   imports: [
     BrowserModule,

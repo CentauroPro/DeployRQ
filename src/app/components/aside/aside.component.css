@@ -1,0 +1,18 @@
+ /* Personaliza el color de fondo del encabezado */
+ .custom-header {
+    background-color: #ff99007c; /* Cambia a tu color deseado */
+    color: #ffffff;
+    padding: 5px;
+}
+
+/* Personaliza el color de fondo de las columnas */
+.custom-column {
+    background-color: #d1b81660; /* Cambia a tu color deseado */
+    border-radius: 10px; /* Añade bordes redondos */
+    padding: 20px;
+    margin-top: 50px;
+
+}
+.ali{
+    align-items: center;
+}

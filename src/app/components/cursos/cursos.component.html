@@ -1,17 +1,32 @@
-<app-navbar></app-navbar>
-<main>
-    <h2 class="contact">Cursos</h2>
-    <div class="grid-container">
-      <div *ngFor="let item of dataProfesor">
-        <ng-container *ngFor="let curso of item.cursos">
-          <div class="grid-item">
-            <div class="card">
-              <h3>{{ curso.nombre }}</h3>
-              <!-- Puedes agregar más detalles del curso aquí si es necesario -->
+<header class="hero">
+  <app-navbar></app-navbar>
+  <section>
+    <div class="container mt-3">
+      <h3 class="title">Mis Cursos</h3>
+      <div class="card-body title">
+        <div class="row">
+          <div class="col-md-4" *ngFor="let item of dataCursos">
+            <div class="thumbnail">
+              <img src="{{ item.url}}" class="img-fluid" style="opacity: 0.7;" alt="Imagen Transparente" />
+             
+              <!--   <a href="{{ item.image }}">
+                <img src="{{ item.image }}" class="cfacial" />
+              </a>-->
+              <div class="caption"><p>{{ item.nombre }}</p>
+              </div>
+              <div class="caption">
+                <p>{{ item.horario }}</p>
+              </div>
+              <div class="caption">
+                <p>{{ item.mes_inicio }}</p>
+              </div>
+              <a class="btn btn-success" href="/estudiantes/"
+                >Ingresar</a
+              >
             </div>
           </div>
-        </ng-container>
+        </div>
       </div>
     </div>
-  </main>
-  
+  </section>
+</header>
