@@ -1,0 +1,43 @@
+<header class="hero">
+  <app-navbar></app-navbar>
+  <nav>
+    <form class="form-inline" action="/estudiantes">
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="number" class="form-control" id="id" #id />
+      </div>
+      <div class="form-group">
+        <label for="">Nombre del Estudiante:</label>
+        <input type="text" class="form-control" #nom />
+      </div>
+      <div class="form-group">
+        <label for="">Nota 1:</label>
+        <input type="text" class="form-control" #nota1 />
+      </div>
+      <div class="form-group">
+        <label for="precio">Nota 2:</label>
+        <input type="text" class="form-control" #nota2 />
+      </div>
+      <div class="form-group">
+        <label for="precio">Nota 3:</label>
+        <input type="text" class="form-control" #nota3 />
+      </div>
+      <div class="form-group">
+        <label for="cantidad">Promedio:</label>
+        <input type="text" class="form-control" #promedio />
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn-warning" (click)="guardarEstudiante(id.value, nom.value, nota1.value, nota2.value, nota3.value, promedio.value)">
+          AGREGAR
+        </button>
+        <button type="button" class="btn btn-info" (click)="actualizarEstudiante(id.value, nom.value, nota1.value, nota2.value, nota3.value, promedio.value)">
+          EDITAR
+        </button>
+        <button type="button" class="btn btn-danger" (click)="eliminarEstudiante(id.value)">
+          BORRAR
+        </button>
+      </div>
+    </form>
+  </nav>
+
+</header>

@@ -3,21 +3,33 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EstudiantesService {
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  private API_ESTUDIANTES='http://localhost:3000/profesores'
+  //private API_ESTUDIANTES = 'http://localhost:3000/estudiantes';
 
-  getEstudiante():Observable <any>  {
-    return this.http.get(this.API_ESTUDIANTES)
+   private API_ESTUDIANTES='http://localhost:9090/estudiantes';
+  getEstudiante(): Observable<any> {
+    return this.http.get(this.API_ESTUDIANTES);
   }
 
-  postEstudiante(user:any):Observable <any>  {
-    return this.http.post(this.API_ESTUDIANTES, user)
+  postEstudiante(user: any): Observable<any> {
+    return this.http.post(this.API_ESTUDIANTES, user);
   }
-  putEstudiante(user: any, id:number): Observable <any>{
+
+  putEstudiante(user: any, id: number): Observable<any> {
+    const url = `${this.API_ESTUDIANTES}/${id}`;
+    return this.http.put(url, user);
+  }
+
+  deleteEstudiante(id: number): Observable<any> {
+    const url = `${this.API_ESTUDIANTES}/${id}`;
+    return this.http.delete(url);
+  }
+
+  /* putEstudiante(user: any, id:number): Observable <any>{
     this.API_ESTUDIANTES= `${this.API_ESTUDIANTES}/${user.id}`
     
     return this.http.put(this.API_ESTUDIANTES, user)
@@ -25,6 +37,5 @@ export class EstudiantesService {
   deleteEstudiante(id: number): Observable <any>{
     this.API_ESTUDIANTES= `${this.API_ESTUDIANTES}/${id}`
     return this.http.delete(this.API_ESTUDIANTES)
-  }
-
+  }*/
 }

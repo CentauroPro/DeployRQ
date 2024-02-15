@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { EstudiantesService } from 'src/app/services/estudiantes.service';
 
 @Component({
-  selector: 'app-estudiantes',
-  templateUrl: './estudiantes.component.html',
-  styleUrls: ['./estudiantes.component.css'],
+  selector: 'app-form-estudiantes',
+  templateUrl: './form-estudiantes.component.html',
+  styleUrls: ['./form-estudiantes.component.css'],
 })
-export class EstudiantesComponent {
+export class FormEstudiantesComponent {
   constructor(private servicio: EstudiantesService) {}
 
   calcularPromedio(nota1: string, nota2: string, nota3: string): string {
@@ -15,15 +15,9 @@ export class EstudiantesComponent {
     return promedio.toFixed(2); // Redondear a 2 decimales
   }
 
-  dataEstudiantes: any;
+  
 
-  ngOnInit() {
-    this.servicio.getEstudiante().subscribe((estudiante) => {
-      this.dataEstudiantes = estudiante;
-    });
-  }
-
- guardarEstudiante(
+  guardarEstudiante(
     id: string,
     nom: string,
     nota1: string,
@@ -44,8 +38,6 @@ export class EstudiantesComponent {
 
     this.servicio.postEstudiante(tem).subscribe();
   }
-
-
   actualizarEstudiante(
     id: string,
     nom: string,
@@ -70,10 +62,10 @@ export class EstudiantesComponent {
     this.servicio.putEstudiante(tem, ide).subscribe();
   }
 
+
+
   eliminarEstudiante(id: string) {
     const ide: number = parseInt(id);
     this.servicio.deleteEstudiante(ide).subscribe();
   }
-
-
 }

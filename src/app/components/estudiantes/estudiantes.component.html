@@ -1,39 +1,56 @@
-<app-navbar></app-navbar>
+<header class="hero">
+  <app-navbar></app-navbar>
+  <main>
+    <h2 class="contact">Lista de estudiantes</h2>
 
-<main>
-  <h2 class="contact"></h2>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Nombre del Profesor</th>
-        <th>Nombre del Curso</th>
-       <!-- <th>Estudiante</th>-->
-        <th>Promedio</th>
-        
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Abre el bucle *ngFor en la fila -->
-      <ng-container *ngFor="let profesor of dataProfesores">
-        <!-- Agrega un bucle para recorrer los cursos del profesor -->
-        <ng-container *ngFor="let curso of profesor.cursos">
-          <!-- Agrega un bucle para recorrer los estudiantes del curso -->
-          <ng-container *ngFor="let estudiante of curso.estudiantes">
-            <!-- Agrega un bucle para recorrer las calificaciones del estudiante -->
-            <ng-container *ngFor="let calificacion of estudiante.calificaciones">
-              <!-- Coloca las celdas dentro del bucle del profesor -->
-              <tr>
-                <td>{{ profesor.nombre }}</td>
-                <td>{{ curso.nombre }}</td>
-                <!--<td>{{ estudiante.nombre }}</td>-->
-                <td>{{ calificacion.promedio}}</td>
-              
-              </tr>
-            </ng-container>
-          </ng-container>
-        </ng-container>
-      </ng-container>
-    </tbody>
-  </table>
-</main>
+    <table class="table elegant-table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Alumnos</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Nota 3</th>
+          <th>Promedio</th>
+          <th>Acción a Realizar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of dataEstudiantes">
+          <td>{{ item.id }}</td>
+          <td>{{ item.nombre }}</td>
+          <td>{{ item.nota_1 }}</td>
+          <td>{{ item.nota_2 }}</td>
+          <td>{{ item.nota_3 }}</td>
+          <td>{{ item.promedio }}</td>
 
+          <td>
+            <a class="btn btn-warning" href="/formEstudiantes/{{ item.id }}">Agregar</a>
+            &nbsp;
+
+            <button
+              type="button"
+              class="btn btn-info"
+              [routerLink]="'/formEstudiantes/' + item.id"
+              (click)="actualizarEstudiante(
+                item.id,
+                item.nombre,
+                item.nota_1,
+                item.nota_2,
+                item.nota_3,
+                item.promedio )"> Editar
+            </button>
+            &nbsp;
+
+            <button
+              type="button"
+              class="btn btn-danger"
+              (click)="eliminarEstudiante(item.id)">
+              Borrar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</header>
