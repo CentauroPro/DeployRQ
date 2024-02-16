@@ -13,7 +13,7 @@ export class CursosService {
 
   //private API_CURSOS='http://localhost:3000/cursos'
   
-  private API_CURSOS='http://localhost:9090/cursos2';
+  private API_CURSOS='http://192.168.1.8:9090/cursos2';
 
 
   getCurso():Observable <any>  {

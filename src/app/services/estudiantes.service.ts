@@ -10,7 +10,7 @@ export class EstudiantesService {
 
   //private API_ESTUDIANTES = 'http://localhost:3000/estudiantes';
 
-   private API_ESTUDIANTES='http://localhost:9090/estudiantes';
+   private API_ESTUDIANTES='http://192.168.1.8:9090/estudiantes';
   getEstudiante(): Observable<any> {
     return this.http.get(this.API_ESTUDIANTES);
   }

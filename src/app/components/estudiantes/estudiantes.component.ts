@@ -36,13 +36,14 @@ export class EstudiantesComponent {
     const tem = {
       id: ide,
       nombre: nom,
-      nota_1: parseFloat(nota1),
-      nota_2: parseFloat(nota2),
-      nota_3: parseFloat(nota3),
+      nota1: parseFloat(nota1),
+      nota2: parseFloat(nota2),
+      nota3: parseFloat(nota3),
       promedio: parseFloat(promGuardado),
     };
 
     this.servicio.postEstudiante(tem).subscribe();
+    
   }
 
 
@@ -61,9 +62,9 @@ export class EstudiantesComponent {
       id: ide,
       nombre: nom,
 
-      nota_1: parseFloat(nota1),
-      nota_2: parseFloat(nota2),
-      nota_3: parseFloat(nota3),
+      nota1: parseFloat(nota1),
+      nota2: parseFloat(nota2),
+      nota3: parseFloat(nota3),
       promedio: parseFloat(promActulizado),
     };
 
