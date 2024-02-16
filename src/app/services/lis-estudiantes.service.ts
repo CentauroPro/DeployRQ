@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class LisEstudiantesService {
 
   constructor(private http: HttpClient) { }
- private API_LIST ='http://localhost:3000/estudiantes';
+ private API_LIST ='http://192.168.1.8:9090/estudiantes';
  getList(): Observable<any> {
   return this.http.get(this.API_LIST);
 }

@@ -19,9 +19,9 @@
         <tr *ngFor="let item of dataEstudiantes">
           <td>{{ item.id }}</td>
           <td>{{ item.nombre }}</td>
-          <td>{{ item.nota_1 }}</td>
-          <td>{{ item.nota_2 }}</td>
-          <td>{{ item.nota_3 }}</td>
+          <td>{{ item.nota1 }}</td>
+          <td>{{ item.nota2 }}</td>
+          <td>{{ item.nota3 }}</td>
           <td>{{ item.promedio }}</td>
 
           <td>
@@ -35,9 +35,9 @@
               (click)="actualizarEstudiante(
                 item.id,
                 item.nombre,
-                item.nota_1,
-                item.nota_2,
-                item.nota_3,
+                item.nota1,
+                item.nota2,
+                item.nota3,
                 item.promedio )"> Editar
             </button>
             &nbsp;
